@@ -1,0 +1,632 @@
+@charset "utf-8";
+* { 
+	margin: 0;
+	padding: 0;
+	outline:none;
+    transform: scale;
+}
+
+@font-face {
+	font-family: "MullerLight";
+	src: url(E://практика/Screena/fonts/MullerLight.otf) format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MullerMedium";
+	src: url(E://практика/Screena/fonts/MullerMedium.otf) format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "MullerRegular";
+	src: url(E://практика/Screena/fonts/MullerRegular.otf) format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	color: #D3D3D3;
+	background: #fafafa;
+	font-size: 1em; 
+	font-family: "MullerLight";
+	line-height: 135%;
+}
+
+header, footer {
+	width: 96%;
+	float: left;
+}
+
+header {
+	padding: 2%;
+	background-color: #fff;
+	/*border-bottom: 1px solid silver;*/
+}
+
+#city {
+	font-family: "MullerLight";
+	color: #8e8e8e;
+	margin-bottom: -41.9px;
+}
+
+img.calendar {
+	margin-bottom: -20px;
+}
+
+.data {
+	font-family: "MullerLight";
+	color: #8e8e8e;
+	}
+	
+.right {
+	float:right;
+	margin-top: -40px;
+}
+
+input[type=text].field{
+	border: 1px solid silver;
+	padding: 5px;
+	margin-left: 20 px;
+    font-family: "MullerLight";
+	min-width: 50px;
+}
+
+img.loupe{
+	position: relative;
+    float: right;
+	top: 7px;
+	background-size: auto 80%;
+}
+
+.login {
+    background: #fff;
+	display: inline-block;
+	color: #19a195;
+	font-family: "MullerRegular";
+	cursor: pointer;
+	border-bottom: 1px solid #19a195;
+	border-right: 1px solid #19a195;
+	border-top: 1px solid #19a195;
+	border-left: 1px solid #19a195;
+	transition: .2s;
+}
+
+.login:hover { 
+    color: #fff;
+    background: #19a195; 
+}
+.login:active { 
+    color: #fff;
+    background: #19a195;  
+}
+
+.checkin {
+    background: #19a195;
+	display: inline-block;
+	color: #fff;
+	font-family: "MullerRegular";
+	cursor: pointer;
+	border-bottom: 1px solid #19a195;
+	border-right: 1px solid #19a195;
+	border-top: 1px solid #19a195;
+	border-left: 1px solid #19a195;
+	transition: .2s;
+} 
+.checkin:hover { 
+    color: #19a195;
+    background: #fff; 
+}
+.checkin:active { 
+    color: #19a195;
+    background: #fff; 
+}   
+
+main {
+	background-color: #fff;
+} 
+
+.container{
+ width:350px;
+ height: 400px;
+ background-color: #fff;
+ margin: 120px 100px 0 100px;
+ text-align: center;
+ border-bottom: 1px solid #19a195;
+ border-right: 1px solid #19a195;
+ border-top: 1px solid #19a195;
+ border-left: 1px solid #19a195;
+ border-radius: 10px;
+}  
+
+input[type="text"],input[type="password"]{
+ width: 300px;
+ height:40px;
+ font-size: 18px;
+ margin-bottom: 25px;
+ border-radius: 4px;
+ padding-left: 10px;
+ border-bottom: 1px solid #c4c4c4;
+ border-right: 1px solid #c4c4c4;
+ border-top: 1px solid #c4c4c4;
+ border-left: 1px solid #c4c4c4;
+}   
+
+input[type="text"] {
+	margin-top: 50px;
+}
+
+input[type="password"] {
+	margin-top: 20px;
+}
+
+.enter {
+	background: #19a195;
+	display: inline-block;
+	padding: 0 10px;
+	line-height: 30px;
+	color: #fff;
+	font-family: "MullerRegular";
+	font-size: 13px;
+	border-radius: 5px;
+	cursor: pointer;
+	border-bottom: 1px solid #19a195;
+	border-right: 1px solid #19a195;
+	border-top: 1px solid #19a195;
+	border-left: 1px solid #19a195;
+	transition: .2s;
+}
+
+a {
+ color: #19a195;
+}
+a:hover{
+ text-decoration: none;
+}
+
+@media (min-width: 700px) {
+img.logo {
+	width: 120px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+#city {
+	font-size: 12px;
+	margin-left: 10px;
+}
+
+img.calendar {
+	width: 10px;
+	height: 11px;
+	margin-left: 58px; 
+}
+
+.data {
+	font-size: 12px;
+    margin-left: 70px;
+	}
+
+input[type=text].field{
+	border-radius: 5px;
+	height: 12px; 
+	width: 250px;
+	font-size: 13px; 
+	max-width: 250px;
+}
+
+img.loupe{
+    height: 20px;
+	right: 196px;
+}
+
+.login {
+	padding: 0 10px;
+	line-height: 30px;
+	font-size: 13px;
+	border-radius: 5px;
+} 
+
+#log {
+	text-decoration: none;
+	color: #19a195;
+}
+
+#log:hover { 
+    color: #fff;
+    background: #19a195; 
+}
+
+.checkin {
+	padding: 0 10px;
+	line-height: 30px;
+	font-size: 13px;
+	border-radius: 5px;
+
+} 
+.checkin:hover { 
+    color: #19a195;
+    background: #fff; 
+}
+.checkin:active { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.premier {
+	width: 20px;
+	height: 19px;
+	margin-left: 21px; 
+	margin-bottom: -2px;
+}
+
+.soon {
+	font-family: "MullerLight";
+	font-size: 16px;
+	text-decoration: none;
+	color: #696969;
+	margin-left: 6px;
+}
+
+.soon:hover { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.soon:active { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.genre {
+	width: 20px;
+	height: 19px;
+	margin-left: 21px; 
+	margin-bottom: -5px;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menugen > li {
+    float: left;
+    position: relative;
+}
+ul.menugen > li > a {
+    display: block;
+    /*padding: 10px;*/
+	margin-left: 52px;
+	margin-top: -18px;
+    color: #696969;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.menugen > li > a:hover {
+    color: #19a195;
+    background: #fff;
+}
+ul.submenugen {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: #fff;
+	text-decoration: none;
+}
+ul.submenugen > li {
+    display: block;
+}
+ul.submenugen > li > a {
+    display: block;
+    padding: 3px;
+    color: #a3a3a3;
+	font-size: 14px;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.submenugen > li > a:hover {
+	color: #19a195;
+    text-decoration: none;
+}
+
+ul.menugen > li:hover > ul.submenugen {
+    display: block;
+}
+
+.cinema {
+	width: 20px;
+	height: 19px;
+	margin-left: 21px; 
+	margin-top: -50px;
+	margin-bottom: 15px;
+}
+
+ul.menukin > li {
+    float: left;
+    position: relative;
+}
+ul.menukin > li > a {
+    display: block;
+    margin-left: 52px;
+	margin-top: -38px;
+    color: #696969;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.menukin > li > a:hover {
+    color: #19a195;
+    background: #fff;
+}
+ul.submenukin {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: #fff;
+	text-decoration: none;
+}
+ul.submenukin > li {
+    display: block;
+}
+ul.submenukin > li > a {
+    display: block;
+    padding: 3px;
+    color: #a3a3a3;
+	font-size: 14px;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.submenukin > li > a:hover {
+	color: #19a195;
+    text-decoration: none;
+}
+
+ul.menukin > li:hover > ul.submenukin {
+    display: block;
+}
+
+footer {
+	padding: 2%;
+	color: #fff;
+	font-family: "MullerLight";
+	font-size: 13px;
+	background-color: #c4c4c4;
+	border-bottom: 2px solid silver;
+	margin-top: 10px;
+}}
+
+@media (max-width: 699px) {
+img.logo {
+	width: 45px;
+	height: 15px;
+	margin-left: 5px;
+}
+
+#city {
+	font-size: 6px;
+	margin-left: 5px;
+}
+
+img.calendar {
+	width: 5px;
+	height: 5.5px;
+	margin-left: 30px; 
+}
+
+.data {
+	font-size: 6px;
+    margin-left: 36px;
+	}
+
+input[type=text].field{
+	border-radius: 3px;
+	height: 6px; 
+	width: 100px;
+	font-size: 7px; 
+	max-width: 100px;
+}
+
+img.loupe{
+    height: 10px;
+	right: 100px;
+}
+
+.login {
+	padding: 0 5px;
+	line-height: 15px;
+	font-size: 6px;
+	border-radius: 3px;
+} 
+
+.checkin {
+	padding: 0 5px;
+	line-height: 15px;
+	font-size: 6px;
+	border-radius: 3px;
+} 
+.checkin:hover { 
+    color: #19a195;
+    background: #fff; 
+}
+.checkin:active { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.premier {
+	width: 10px;
+	height: 9px;
+	margin-left: 21px; 
+	margin-bottom: 0px;
+}
+
+.soon {
+	font-family: "MullerLight";
+	font-size: 8px;
+	text-decoration: none;
+	color: #696969;
+	margin-left: 6px;
+}
+
+.soon:hover { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.soon:active { 
+    color: #19a195;
+    background: #fff; 
+}
+
+.genre {
+	width: 10px;
+	height: 9px;
+	margin-left: 21px; 
+	margin-bottom: -5px;
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menugen > li {
+    float: left;
+    position: relative;
+	font-size: 8px;
+}
+ul.menugen > li > a {
+    display: block;
+    /*padding: 10px;*/
+	margin-left: 52px;
+	margin-top: -18px;
+    color: #696969;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.menugen > li > a:hover {
+    color: #19a195;
+    background: #fff;
+}
+ul.submenugen {
+    display: none;
+    position: absolute;
+    width: 30px;
+    top: 18px;
+    left: 0;
+    background-color: #fff;
+	text-decoration: none;
+}
+ul.submenugen > li {
+    display: block;
+}
+ul.submenugen > li > a {
+    display: block;
+    padding: 1px;
+    color: #a3a3a3;
+	font-size: 7px;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.submenugen > li > a:hover {
+	color: #19a195;
+    text-decoration: none;
+}
+
+ul.menugen > li:hover > ul.submenugen {
+    display: block;
+}
+
+.cinema {
+	width: 10px;
+	height: 9px;
+	margin-left: 21px; 
+	margin-top: -50px;
+	margin-bottom: 15px;
+}
+
+ul.menukin > li {
+    float: left;
+    position: relative;
+	font-size: 8px;
+}
+ul.menukin > li > a {
+    display: block;
+    margin-left: 52px;
+	margin-top: -38px;
+    color: #696969;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.menukin > li > a:hover {
+    color: #19a195;
+    background: #fff;
+}
+ul.submenukin {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: #fff;
+	text-decoration: none;
+}
+ul.submenukin > li {
+    display: block;
+}
+ul.submenukin > li > a {
+    display: block;
+    padding: 3px;
+    color: #a3a3a3;
+	font-size: 7px;
+    background-color: #fff;
+    text-decoration: none;
+}
+ul.submenukin > li > a:hover {
+	color: #19a195;
+    text-decoration: none;
+}
+
+ul.menukin > li:hover > ul.submenukin {
+    display: block;
+}
+
+footer {
+	padding: 2%;
+	color: #fff;
+	font-family: "MullerLight";
+	font-size: 6px;
+	background-color: #c4c4c4;
+	border-bottom: 1px solid silver;
+	margin-top: 10px;
+}}
+
+.page{
+    width: 75%;	
+	margin: 0 auto;
+}

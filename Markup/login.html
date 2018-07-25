@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="styles/login.css" rel="stylesheet" type="text/css" />
+<link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<title>Screena</title>
+</head>
+<body>
+<div class="page">
+<header>
+<img class="logo" src="images/logo.png" />
+<p id="city">Минск</p>
+<img class="calendar" src="images/calendar.png" />
+<!-- <input type="date"> -->
+<div class="data">
+<script language="javascript" type="text/javascript"><!--
+var d = new Date();
+var month=new Array("января","февраля","марта","апреля","мая","июня",
+"июля","августа","сентября","октября","ноября","декабря");
+document.write("Сегодня, " + d.getDate()+ " " + month[d.getMonth()]);
+//--></script>
+</div>
+<span class="right">
+<form name="search" action="php" method="get">
+<img class="loupe" src="images/search.png" />
+<input type="text" class="field" placeholder="Найти" name="search" maxlength="10" />
+<button class="login"> Войти </button> 
+<button class="checkin"> Регистрация </button>
+</span>
+<div class="container">
+	<form>
+	<div class="dws-input">
+		<input type="text" name="username" placeholder="Введите логин">
+	</div>
+	<div class="dws-input">
+		<input type="password" name="password" placeholder="Введите пароль">
+	</div>
+		<input type="submit" class="enter" name="submit" value="ВОЙТИ">
+		<a href="#" class="dws-submit">Восстановить пароль</a>
+	</form> 
+</div> 
+</form>
+</header>
+<main>
+<br><br><br><br><br><br><br>
+<img class="premier" src="images/premier.png" />
+<a class="soon" href=""> Скоро в прокате </a>
+<br><br>
+<img class="genre" src="images/genre.png" />
+<ul class="menugen">
+    <li><a href=#> Жанры </a>
+        <ul class="submenugen">
+            <li><a href=#> Приключения </a></li>
+            <li><a href=#> Комедия </a></li>
+            <li><a href=#> Мелодрама </a></li>
+			<li><a href=#> Ужасы </a></li>
+            <li><a href=#> Боевик </a></li>
+            <li><a href=#> Семейный </a></li>
+        </ul>
+    </li>
+</ul>
+<br><br>
+<img class="cinema" src="images/cinema.png" />	
+<ul class="menukin">
+	<li><a href=#> Кинотеатры </a>
+        <ul class="submenukin">
+            <li><a href=#> Беларусь </a></li>
+            <li><a href=#> Ракета </a></li>
+            <li><a href=#> Мир </a></li>
+			<li><a href=#> Москва </a></li>
+            <li><a href=#> Победа </a></li>
+            <li><a href=#> Аврора </a></li>
+        </ul>
+    </li>
+</ul>
+<br><br><br><br><br><br><br>
+</main>
+<footer align="center">
+&copy; 2018 "Screena"
+</footer>
+</div>
+</body>
+</html>
