@@ -7,76 +7,8 @@
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 <link href="styles/list.css" rel="stylesheet" type="text/css" />
 <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-<title>Screena</title>
-<script type="text/javascript"> 
-function down()
-{
-  var a = document.getElementById('dropdown');
-  if ( a.style.display == 'none' )
-    a.style.display = 'block'
-  else
-    if ( a.style.display == 'block' )
-    a.style.display = 'none';
-};
-
-function dow()
-{
-  var a = document.getElementById('dropdown1');
-  if ( a.style.display == 'none' )
-    a.style.display = 'block'
-  else
-    if ( a.style.display == 'block' )
-    a.style.display = 'none';
-};
-
-function hide_cities()
-{
-      var darkLayer = document.createElement('div'); // слой затемнения
-      darkLayer.id = 'shadow'; // id чтобы подхватить стиль
-     document.body.appendChild(darkLayer); // включаем затемнение
-
-      var cities_body = document.getElementById('cities_body'); // находим наше "окно"
-     cities_body.style.display = 'block'; // "включаем" его
-
-     darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
-        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
-        cities_body.style.display = 'none'; // делаем окно невидимым
-        return false;
-    };
-};
-
-function hide_login()
-{
-    var darkLayer = document.createElement('div'); 
-    darkLayer.id = 'shadow'; 
-    document.body.appendChild(darkLayer); 
-
-    var container_login = document.getElementById('container_login'); 
-    container_login.style.display = 'block'; 
-
-    darkLayer.onclick = function () { 
-        darkLayer.parentNode.removeChild(darkLayer); 
-        container_login.style.display = 'none'; 
-        return false;
-    };
-};
-
-function hide_checkin()
-{
-    var darkLayer = document.createElement('div');
-    darkLayer.id = 'shadow';
-    document.body.appendChild(darkLayer);
-
-    var container_checkin = document.getElementById('container_checkin');
-    container_checkin.style.display = 'block';
-
-    darkLayer.onclick = function () {
-        darkLayer.parentNode.removeChild(darkLayer);
-        container_checkin.style.display = 'none';
-        return false;
-    };
-};
-</script>
+<script src="js/hide.js"></script>
+    <title>Screena</title>
 </head>
 <body>
 
@@ -228,8 +160,8 @@ function hide_checkin()
 			<a class="socialbutton" href=""> Скоро в прокате </a>
 		</li>
 		<li style="list-style-image: url(images/genre.png)">
-				<a class="socialbutton" onClick="dow()"> Жанры </a>
-			<ul id="dropdown1" style="display: none; list-style: none"> 
+				<a class="socialbutton" onClick="down_genre()"> Жанры </a>
+			<ul id="ul_genre" style="display: none; list-style: none"> 
 				<li>Приключения</li>
 				<li>Семейный</li>
 				<li>Драма</li>
@@ -237,8 +169,8 @@ function hide_checkin()
 			</ul>
 		</li>
 		<li style="list-style-image: url(images/cinema.png)">
-				<a class="socialbutton" onClick="down()"> Кинотеатры </a>
-			<ul id="dropdown" style="display: none; list-style: none;"> 
+				<a class="socialbutton" onClick="down_cinema()"> Кинотеатры </a>
+			<ul id="ul_cinema" style="display: none; list-style: none;"> 
 				<li>Аврора</li>
 				<li>Беларусь</li>
 				<li>Мир</li>

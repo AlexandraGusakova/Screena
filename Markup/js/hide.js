@@ -1,6 +1,6 @@
-function down()
+function down_cinema()
 {
-  var a = document.getElementById('dropdown');
+  var a = document.getElementById('ul_cinema');
   if ( a.style.display == 'none' )
     a.style.display = 'block'
   else
@@ -8,9 +8,9 @@ function down()
     a.style.display = 'none';
 };
 
-function dow()
+function down_genre()
 {
-  var a = document.getElementById('dropdown1');
+  var a = document.getElementById('ul_genre');
   if ( a.style.display == 'none' )
     a.style.display = 'block'
   else
