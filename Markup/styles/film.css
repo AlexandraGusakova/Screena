@@ -1,28 +1,28 @@
-@charset "windows-1251";
+﻿@charset "windows-1251";
 
 * {
     margin: 0;
-    padding: 0;
+    
     outline: none;
 }
 
 @font-face {
     font-family: "MullerLight";
-    src: url(E://��������/Screena/fonts/MullerLight.otf) format("truetype");
+    src: url(E://практика/Screena/fonts/MullerLight.otf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "MullerMedium";
-    src: url(E://��������/Screena/fonts/MullerMedium.otf) format("truetype");
+    src: url(E://практика/Screena/fonts/MullerMedium.otf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
     font-family: "MullerRegular";
-    src: url(E://��������/Screena/fonts/MullerRegular.otf) format("truetype");
+    src: url(E://практика/Screena/fonts/MullerRegular.otf) format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -32,6 +32,7 @@ html {
 }
 
 body {
+    background: #fff;
     width: 100%;
     height: 100%;
     color: #D3D3D3;
@@ -44,7 +45,6 @@ body {
 .page {
     width: 75%;
     margin: 0 auto;
-    background-color: #fff;
 }
 
 header, footer {
@@ -64,7 +64,7 @@ img.logo {
     margin-left: 10px;
 }
 
-/*������*/
+/*Города*/
 
 #city {
     font-family: "MullerLight";
@@ -107,13 +107,6 @@ img.logo {
     border-left: 1px solid #19a195;
 }
 
-/*.cities_content {
-	position: absolute;
-	font-size: 14px;
-	font-family: "MullerLight";
-	list-style: none;
-}*/
-
 .list_region {
     float: right;
     list-style-type: none;
@@ -128,14 +121,14 @@ img.logo {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 1; /* ������ ����  ����� ����*/
+    z-index: 1; /* поверх всех  кроме окна*/
     background: #000;
-    opacity: 0.5; /*������������*/
+    opacity: 0.5; /*прозрачность*/
     left: 0;
     top: 0;
 }
 
-/*���������*/
+/*Календарь*/
 
 .date {
     margin-top: -41px;
@@ -176,7 +169,7 @@ input[type="date"], focus {
     font-size: 10px;
 }
 
-/*������ ����� � �����������*/
+/*Кнопки входа и регистрации*/
 
 #container_login {
     width: 250px;
@@ -362,7 +355,7 @@ img.loupe {
     background: #fff;
 }
 
-/*����� ������*/
+/*стиль кнопки*/
 .socialbutton {
     background-color: #fff;
     display: inline-block;
@@ -385,7 +378,494 @@ img.loupe {
         /*	top:1px;*/
     }
 
+/*Меню*/
 
+.list {
+    width: 200px;
+    height: 100%;
+    padding-left: 0;
+    /*position: fixed;*/
+}
+
+.ul {
+    vertical-align: middle;
+}
+
+#ul_genre, #ul_cinema {
+    color: #9b9b9b;
+    font-size: 13px;
+    margin-left: -25px;
+}
+
+
+
+/*Информация о фильме*/
+
+#movie_page {
+    float: left;
+    width: 100%;
+    margin-top: -120px;
+}
+
+#movie_page #about_film {
+    float: left;
+    width: 80%;
+    margin-left: 25%;
+    /*position: relative;*/
+}
+
+#movie_page #about_film #film_information{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 95%;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-right: 2%;
+    height: 1050px;
+}
+
+#movie_page #about_film #film_information img {
+    width: 35%;
+    height: 38%;
+}
+
+#movie_page #about_film #film_information #film_name {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 280px;
+    color: black;
+    font-family: "MullerRegular";
+    font-size: 26px;
+}
+
+#movie_page #about_film #film_information #original_name {
+    display: inline-block;
+    position: absolute;
+    top: 38px;
+    left: 280px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 19px;
+}
+
+#text_date, #text_country, #text_duration, #text_genre, #text_producer, #text_actors, #text_age {
+    display: inline-block;
+    position: absolute;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#text_date {
+    top: 70px;
+}
+
+#text_country {
+    top: 95px;
+}
+
+#text_duration {
+    top: 120px;
+}
+
+#text_genre {
+    top: 145px;
+}
+
+#text_producer {
+    top: 190px;
+}
+
+#text_actors {
+    top: 215px;
+}
+
+#text_age {
+    top: 240px;
+}
+
+#text_rating1, #text_rating2, #text_rating3 {
+    display: inline-block;
+    position: absolute;
+    top: 265px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 14px;
+}
+
+#text_rating1 {
+    left: 280px;
+}
+
+#text_rating2 {
+    left: 480px;
+}
+
+#text_rating3 {
+    left: 630px;
+}
+
+#film_rating1, #film_rating2, #film_rating3 {
+    display: inline-block;
+    position: absolute;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 26px;
+}
+
+#film_rating1 {
+    top: 310px;
+    left: 280px;
+}
+
+#film_rating2 {
+    top: 315px;
+    left: 480px;
+}
+
+#film_rating3 {
+    top: 315px;
+    left: 630px;
+}
+
+#text_description {
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#text_trailer {
+    display: inline-block;
+    position: absolute;
+    top: 615px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#film_trailer {
+    width: 60%;
+    height: 30%;
+    display: inline-block;
+    position: absolute;
+    top: 650px;
+    left: 280px;
+}
+
+#text_footage {
+    display: inline-block;
+    position: absolute;
+    top: 985px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#text_reviews {
+    display: inline-block;
+    position: absolute;
+    top: 1310px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#textarea_review {
+    display: inline-block;
+    position: absolute;
+    top: 1335px;
+    left: 280px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: MullerLight;
+    color: #cdcdcd;
+    font-size: 12px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+#button_review {
+    background: #fff;
+    position: absolute;
+    top: 1440px;
+    left: 646px;
+    display: inline-block;
+    color: #00ac9a;
+    font-family: "MullerRegular";
+    cursor: pointer;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    transition: .2s;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+#button_review :hover {
+    color: #fff;
+    background: #19a195;
+}
+
+#button_review :active {
+    color: #fff;
+    background: #19a195;
+}
+
+#username {
+    display: inline-block;
+    position: absolute;
+    top: 1500px;
+    left: 310px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 13px;
+}
+#datetime_review {
+    display: inline-block;
+    position: absolute;
+    top: 1500px;
+    left: 350px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 13px;
+}
+
+#review {
+    display: inline-block;
+    position: absolute;
+    top: 1525px;
+    left: 310px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 14px;
+}
+
+#date_seance {
+    display: inline-block;
+    position: absolute;
+    top: 415px;
+    left: 70px;
+    color: #68666a;
+    font-family: "MullerLight";
+}
+
+#name_cinema1 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance1 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: 130px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#time_seance2 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: 180px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#name_cinema2 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance3 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: 130px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance4 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: 180px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#name_cinema3 {
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance5 {
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: 130px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+/*Рейтинг*/
+
+.rating_stars {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    top: 1440px;
+    left: 285px;
+    font-size: 13px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+.rating_stars:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rating_stars:not(:checked) > label {
+    float: right;
+    width: 1em;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #fff; /*закраш звезды без наведения*/
+    text-shadow: 1px 1px #00999a, 2px 2px #00999a, .1em .1em .2em #00999a;
+}
+
+.rating_stars:not(:checked) > label:before {
+    content: '★';
+}
+
+.rating_stars > input:checked ~ label {
+    color: #00999a;
+}
+
+.rating_stars:not(:checked) > label:hover,
+.rating_stars:not(:checked) > label:hover ~ label {
+    color: #00999a;
+}
+
+.rating_stars > input:checked + label:hover,
+.rating_stars > input:checked + label:hover ~ label,
+.rating_stars > input:checked ~ label:hover,
+.rating_stars > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #00999a;
+}
+
+.rating_stars > label:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+/*Слайдер*/
+#film_footage { /* оболочка слайдера и кнопок */
+    width: 172%;
+    height: 70%;
+    display: inline-block;
+    position: absolute;
+    top: 1010px;
+    left: 280px;
+}
+
+.slide { /* —лайд */
+    width: 100%;
+    height: 100%;
+}
+
+.sli-links { /*  нопки смены слайдов */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.sli-links .control-slide {
+    margin: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(images/radioBg.png) center bottom no-repeat;
+}
+
+.sli-links .control-slide:hover {
+    cursor: pointer;
+    background-position: center center;
+}
+
+.sli-links .control-slide.active {
+    background-position: center top;
+}
+
+#prewbutton, #nextbutton { /* —сылка "—ледующий" и "ѕедыдущий" */
+    display: block;
+    width: 15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    text-indent: -999px;
+    background: url(images/arrowBg.png) left center no-repeat;
+    opacity: 0.8;
+    z-index: 3;
+    outline: none !important;
+}
+
+#prewbutton {
+    left: 10px;
+}
+
+#nextbutton {
+    right: 10px;
+    background: url(images/arrowBg.png) right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {
+    opacity: 1;
+}
+    
 footer {
     /*margin-bottom: -20px;*/
     padding: 2%;

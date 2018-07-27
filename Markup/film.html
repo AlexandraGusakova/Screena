@@ -4,10 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <meta name="keywords" content="кино, киноафиша, фильм" />
     <meta name="description" content="Афиша кинотеатров Беларуси. Расписание сеансов в кинотеатрах, трейлеры, последние новинки кино." />
-    <link href="styles/style.css" rel="stylesheet" type="text/css" />
-    <link href="styles/list.css" rel="stylesheet" type="text/css" />
+    <link href="styles/film.css" rel="stylesheet" type="text/css" />
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <script src="js/hide.js"></script>
+    <script src="js/for_slider.js"></script>
+    <script src="js/slider.js"></script>
     <title>Screena</title>
 </head>
 <body>
@@ -38,76 +39,76 @@
 
 
 
-            <div id="cities_body" style=" display: none; list-style: none;">
-                <div class="cities_content">
-                    <table cellspacing="20" cellpadding="0" border="0">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Минск</li>
-                                        <li id="li_city">Минск</li>
-                                        <li id="li_city">Минск</li>
-                                        <li id="li_city">Минск</li>
-                                        <li id="li_city">Минск</li>
-                                        <li id="li_city">Минск</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Брест</li>
-                                        <li id="li_city">Брест</li>
-                                        <li id="li_city">Брест</li>
-                                        <li id="li_city">Брест</li>
-                                        <li id="li_city">Брест</li>
-                                        <li id="li_city">Брест</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Витебск</li>
-                                        <li id="li_city">Витебск</li>
-                                        <li id="li_city">Витебск</li>
-                                        <li id="li_city">Витебск</li>
-                                        <li id="li_city">Витебск</li>
-                                        <li id="li_city">Витебск</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Гомель</li>
-                                        <li id="li_city">Гомель</li>
-                                        <li id="li_city">Гомель</li>
-                                        <li id="li_city">Гомель</li>
-                                        <li id="li_city">Гомель</li>
-                                        <li id="li_city">Гомель</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Могилев</li>
-                                        <li id="li_city">Могилев</li>
-                                        <li id="li_city">Могилев</li>
-                                        <li id="li_city">Могилев</li>
-                                        <li id="li_city">Могилев</li>
-                                        <li id="li_city">Могилев</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul id="list_region">
-                                        <li id="li_city">Гродно</li>
-                                        <li id="li_city">Гродно</li>
-                                        <li id="li_city">Гродно</li>
-                                        <li id="li_city">Гродно</li>
-                                        <li id="li_city">Гродно</li>
-                                        <li id="li_city">Гродно</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+<div id="cities_body" style=" display: none; list-style: none;">
+    <div class="cities_content">
+        <table cellspacing="20" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Минск</li>
+                            <li id="li_city">Минск</li>
+                            <li id="li_city">Минск</li>
+                            <li id="li_city">Минск</li>
+                            <li id="li_city">Минск</li>
+                            <li id="li_city">Минск</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Брест</li>
+                            <li id="li_city">Брест</li>
+                            <li id="li_city">Брест</li>
+                            <li id="li_city">Брест</li>
+                            <li id="li_city">Брест</li>
+                            <li id="li_city">Брест</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Витебск</li>
+                            <li id="li_city">Витебск</li>
+                            <li id="li_city">Витебск</li>
+                            <li id="li_city">Витебск</li>
+                            <li id="li_city">Витебск</li>
+                            <li id="li_city">Витебск</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Гомель</li>
+                            <li id="li_city">Гомель</li>
+                            <li id="li_city">Гомель</li>
+                            <li id="li_city">Гомель</li>
+                            <li id="li_city">Гомель</li>
+                            <li id="li_city">Гомель</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Могилев</li>
+                            <li id="li_city">Могилев</li>
+                            <li id="li_city">Могилев</li>
+                            <li id="li_city">Могилев</li>
+                            <li id="li_city">Могилев</li>
+                            <li id="li_city">Могилев</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul id="list_region">
+                            <li id="li_city">Гродно</li>
+                            <li id="li_city">Гродно</li>
+                            <li id="li_city">Гродно</li>
+                            <li id="li_city">Гродно</li>
+                            <li id="li_city">Гродно</li>
+                            <li id="li_city">Гродно</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
 
 
 
@@ -148,102 +149,112 @@
                     </form>
                 </div>
             </div>
+
+
+<!--<div class="content">-->
+            <br /><br /><br />
+            <div class="list">
+                <ul class="ul">
+                    <li style="list-style-image: url(images/premier.png)">
+                        <a class="socialbutton" href=""> Скоро в прокате </a>
+                    </li>
+                    <li style="list-style-image: url(images/genre.png)">
+                        <a class="socialbutton" onClick="down_genre()"> Жанры </a>
+                        <ul id="ul_genre" style="display: none; list-style: none">
+                            <li>Приключения</li>
+                            <li>Семейный</li>
+                            <li>Драма</li>
+                            <li>Ужасы</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-image: url(images/cinema.png)">
+                        <a class="socialbutton" onClick="down_cinema()"> Кинотеатры </a>
+                        <ul id="ul_cinema" style="display: none; list-style: none;">
+                            <li>Аврора</li>
+                            <li>Беларусь</li>
+                            <li>Мир</li>
+                            <li>Ракета</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+<div id="movie_page">
+    <div id="about_film">
+        <div id="film_information">
+            <img src="images/supersemeyka.jpg" />
+            <span id="film_name"><strong>Суперсемейка 2</strong></span>
+            <span id="original_name">Incredibles 2</span>
+            <span id="text_date">Дата показа: <span id="display_date" style="font-family:MullerLight; color: #acacac;">с 14 июня по 1 августа</span></span>
+            <span id="text_country">Страна: <span id="film_country" style="font-family:MullerLight; color: #acacac;">США, <span id="film_year">2018 г.</span></span></span>
+            <span id="text_duration">Длительность: <span id="film_duration" style="font-family:MullerLight; color: #acacac;">115 мин.</span></span>
+            <span id="text_genre">Жанр: <span id="film_genre" style="font-family:MullerLight; color: #acacac;">Приключения, Фантастика, Семейный, Мультфильм, Комедия, Боевик</span></span>
+            <span id="text_producer">Режиссер: <span id="film_producer" style="font-family:MullerLight; color: #acacac;">Брэд Бёрд</span></span>
+            <span id="text_actors">В главных ролях: <span id="film_actors" style="font-family:MullerLight; color: #acacac;">Холли Хантер, Кэтрин Кинер, София Буш</span></span>
+            <span id="text_age">Возрастное ограничение: <span id="film_age" style="font-family:MullerLight; color: #acacac;">6+</span></span>
+            <span id="text_rating1">Рейтинг фильма <p>по мнению 290 человек</p></span>
+            <span id="film_rating1">7,7 <img src="images/premiere.png" /></span>
+            <span id="text_rating2">Рейтинг фильма <p>по IMDb</p></span>
+            <span id="film_rating2">8,3</span>
+            <span id="text_rating3">Рейтинг фильма <p>в Кинопоиске</p></span>
+            <span id="film_rating3">7,6</span>
+            <span id="text_description">Описание: <p id="film_description" style="font-family:MullerLight; color: #acacac;">После событий первой части суперсемейка пользуется повышенным вниманием со стороны журналистов. Неожиданно оказалось, что обаятельная Миссис Исключительная гораздо лучше смотрится на экране телевизора, чем её муж. Мистеру Исключительному все чаще приходится сидеть дома и приглядывать за детьми, у каждого из которых есть свои причины быть недовольным собственными суперспособностями. Однако семейным проблемам предстоит отступить на второй план, когда окажется, что спокойствию Суперсемейки угрожает новый могущественный враг.</p></span>
+            <span id="text_trailer">Трейлер: </span>
+            <video id="film_trailer" controls>
+                <source src="https://www.youtube.com/watch?v=fT2WBr8Cy5U">
+            </video>
+            <span id="text_footage">Кадры из фильма: </span>
+            <br /><br /><br /><br /><br />
+            <div id="film_footage">
+                <div id="slider">
+                    <div class="slide"><img src="images/1.jpg" width="1500" height="300"></div>
+                    <div class="slide"><img src="images/2.jpg" width="1500" height="300"></div>
+                    <div class="slide"><img src="images/3.jpg" width="1500" height="300"></div>
+                    <div class="slide"><img src="images/4.jpg" width="1500" height="300"></div>
+                    <br />
+                </div>
+            </div>
+            <span id="text_reviews">Отзывы: </span>
+            <textarea id="textarea_review" placeholder="Оставьте ваш отзыв" cols="70" rows="6"></textarea>
+            <div class="rating_stars">
+                <input type="radio" id="star10" name="rating" /><label for="star10"></label>
+                <input type="radio" id="star9" name="rating" /><label for="star9"></label>
+                <input type="radio" id="star8" name="rating" /><label for="star8"></label>
+                <input type="radio" id="star7" name="rating" /><label for="star7"></label>
+                <input type="radio" id="star6" name="rating" /><label for="star6"></label>
+                <input type="radio" id="star5" name="rating" /><label for="star5"></label>
+                <input type="radio" id="star4" name="rating" /><label for="star4"></label>
+                <input type="radio" id="star3" name="rating" /><label for="star3"></label>
+                <input type="radio" id="star2" name="rating"  /><label for="star2"></label>
+                <input type="radio" id="star1" name="rating"  /><label for="star1"></label>
+            </div>
+            <input type="button" id="button_review" value="Оставить" />
+            <span id="username">dzhuk</span>
+            <span id="datetime_review">7.07.2018 13:22</span>
+            <!--<img id="img_user" src="#"/>
+            <span id="stars_review">7<img src="#"></span>-->
+            <span id="review">Нам понравился очень. Долгий, конечно, но захватывающий.</span>
+            <span id="date_seance">11 июля. сегодня</span>
+            <span id="name_cinema1">3D кино в замке</span>
+            <span id="time_seance1">14:30</span>
+            <span id="time_seance2">16:30</span>
+            <span id="name_cinema2">Аврора</span>
+            <span id="time_seance3">10:00</span>
+            <span id="time_seance4">18:30</span>
+            <span id="name_cinema3">Пионер</span>
+            <span id="time_seance5">13:30</span>
+        </div>
+
+
+    </div>
+</div>
         </header>
 
-            <br /><br /><br />
+            <footer align="center">
+                &copy; 2018 "Screena"
+            </footer>
 
-    <div class="list">
-        <ul class="ul">
-            <li style="list-style-image: url(images/premier.png)">
-                <a class="socialbutton" href=""> Скоро в прокате </a>
-            </li>
-            <li style="list-style-image: url(images/genre.png)">
-                <a class="socialbutton" onClick="dow()"> Жанры </a>
-                <ul id="dropdown1" style="display: none; list-style: none">
-                    <li>Приключения</li>
-                    <li>Семейный</li>
-                    <li>Драма</li>
-                    <li>Ужасы</li>
-                </ul>
-            </li>
-            <li style="list-style-image: url(images/cinema.png)">
-                <a class="socialbutton" onClick="down()"> Кинотеатры </a>
-                <ul id="dropdown" style="display: none; list-style: none;">
-                    <li>Аврора</li>
-                    <li>Беларусь</li>
-                    <li>Мир</li>
-                    <li>Ракета</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-        <!--<div id="advertising">
-            <div id="posters">
-                <div id="poster_one">
-                    <img src="images/khot_dog.jpg" />
-                    <span>Хот-дог</span>
-                </div>
-                <div id="poster_two">
-                    <img src="images/32.jpeg" />
-                    <span>Суперсемейка 2</span>
-                </div>
-                <div id="poster_three">
-                    <img src="images/iv512.jpg" />
-                    <span>Человек-Муравей и Оса</span>
-                </div>
-            </div>
-
-
-            <span id="today">
-                Киноафиша сегодня:
-                <a href="#">Минск</a>
-            </span>
-
-            <br /><br />
-
-            <div id="now">
-                <div id="films">
-                    <div id="film_one">
-                        <img src="images/810.jpg" />
-                        <span class="name_film"><strong>Человек-Муравей и Оса</strong></span>
-                        <span class="genre_film">Фантастика, Приключения, Боевик,</span>
-                        <span class="date_film">до 22 июля</span>
-                    </div>
-                    <div id="film_two">
-                        <img src="images/supersemeyka.jpg" />
-                        <span class="name_film"><strong>Суперсемейка 2</strong></span>
-                        <span class="genre_film">Анимация,</span>
-                        <span class="date_film">до 15 июля</span>
-                    </div>
-                    <div id="film_three">
-                        <img src="images/8-podrug.jpg" />
-                        <span class="name_film"><strong>8 подруг Оушена</strong></span>
-                        <span class="genre_film">Триллер, Криминальный, Боевик,</span>
-                        <span class="date_film">до 11 июля</span>
-                    </div>
-                    <div id="film_four">
-                        <img src="images/ty-vodish.jpg" />
-                        <span class="name_film"><strong>Ты водишь!</strong></span>
-                        <span class="genre_film">Комедия</span>
-                        <span class="date_film">до 18 июля</span>
-                    </div>
-                    <div id="film_five">
-                        <img src="images/vo-vlasti.jpg" />
-                        <span class="name_film"><strong>Во власти стихии</strong></span>
-                        <span class="genre_film">Триллер, Приключения, Мелодрама, Драма, Боевик,</span>
-                        <span class="date_film">до 18 июля</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>-->
-        <!--<p>bftbfjbfkjnbgnkjbngkbjngf</p>-->
-    <br /><br /><br />
-
-
-        <footer align="center">
-            &copy; 2018 "Screena"
-        </footer>
-    </div>
+</div>
 </body>
 </html>
