@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "MullerMedium";
+    src: url("../fonts/MullerMedium.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MullerLight";
+    src: url("../fonts/MullerLight.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "MullerRegular";
+    src: url("../fonts/MullerRegular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@media screen and (min-width: 600px) {
+
+    .flex-container{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65%;
+    }
+
+    .flex2{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 19%;
+        margin-right: .5%;
+    }
+
+    .flex-item{
+        font-size: 1em;
+        margin-left: 1%;
+    }
+
+    body {
+        font-family: "MullerLight";
+        //font-size: 80%;
+        color: #696969;
+        font-weight: 400;
+        background: blue;
+        margin-top: 0;
+        height: 200px;
+    }
+
+    .content {
+        margin: 0 auto;
+        width: 85%;
+        background: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 9%;
+        height: 9%;
+        margin: 5px 20px 5px 30px;
+    }
+
+    .flex2{
+        display: flex;
+        align-content: center;
+    }
+
+
+
+    /*a {*/
+        /*position: relative;*/
+        /*font-size: 100%;*/
+        /*margin-top: 10%;*/
+    /*}*/
+
+    /*.search_form {*/
+        /*position: relative;*/
+    /*}*/
+
+    /*.search {*/
+        /*border-radius: 3px;*/
+        /*outline: none;*/
+        /*border: .5px solid #c4c4c4;*/
+        /*//margin-top: -10%;*/
+        /*color: #d5d5d5;*/
+        /*//padding: 2% 0 2% 3%;*/
+        /*//padding-left: 3%;*/
+    /*}*/
+
+    /*.logout {*/
+        /*position: relative;*/
+        /*border: none;*/
+        /*//padding: % % % %;*/
+        /*border-radius: 3px;*/
+        /*background: #1aa195;*/
+        /*color: #fff;*/
+        /*//margin-top: -10%;*/
+        /*}*/
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-family: "MullerLight";
+        font-size: 10%;
+        color: #696969;
+        font-weight: 400;
+        background: red;
+        margin-top: 0;
+        height: 200px;
+    }
+    .content {
+        margin: 0 auto;
+        width: 85%;
+        background: white;
+    }
+
+    header {
+
+    }
+
+    .logo {
+        width: 40px;
+        margin: 5px 20px 5px 30px;
+        display: inline-block;
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+        vertical-align: -15px;
+        font-size: 14px;
+    }
+
+    a {
+        margin-left: 15px;
+    }
+
+    .search_form {
+        display: inline-block;
+        top: -15px;
+        position: relative;
+        margin-left: 15px;
+    }
+
+    .search {
+        border-radius: 3px;
+        outline: none;
+        border: .5px solid #c4c4c4;
+        font-size: 14px;
+        color: #d5d5d5;
+        height: 25px;
+    }
+
+    .logout {
+        display: inline-block;
+        top: -15px;
+        position: relative;
+        border: none;
+        padding: 6.5px 17px 4.5px 0;
+        border-radius: 3px;
+        background: #1aa195;
+        color: #fff;
+        margin-left: 5px;
+
+    }
+}
