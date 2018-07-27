@@ -1,0 +1,29 @@
+@media only screen  and (min-width: 768px) and (max-width: 1023px) {
+    body{
+      width:100%;
+      background: white;
+      color: #696969;
+      margin: 0 auto;
+      font-size: 16px;
+    }
+
+    .logo{
+      width: 60%;
+      margin: 8px 30px 10px 35px;
+    }
+
+    .top-left{
+      margin-bottom: 80px;
+      font-size: 12px;
+    }
+
+    .cities{
+      float: left;
+      margin: 0px 15px 10px 25px;
+    }
+
+    .date{
+      float: left;
+    }
+
+}

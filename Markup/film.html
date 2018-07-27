@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta name="keywords" content="кино, киноафиша, фильм" />
+    <meta name="description" content="Афиша кинотеатров Беларуси. Расписание сеансов в кинотеатрах, трейлеры, последние новинки кино." />
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/list.css" rel="stylesheet" type="text/css" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="js/hide.js"></script>
+    <title>Screena</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <header>
+            <div class="top-left">
+                <img class="logo" src="images/logo.png" />
+
+                <div class="cities">
+                    <a href="#" id="city" onClick="hide_cities()"> Минск </a>
+
+
+                </div>
+
+
+                <div class="date">
+                    <img class="calendar" src="images/calendar.png" />
+                    <div class="data">
+                        <input type="date" id="dataToday" value="Сегодня, " />
+                        <script>
+                            document.getElementById('dataToday').valueAsDate = new Date();
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="cities_body" style=" display: none; list-style: none;">
+                <div class="cities_content">
+                    <table cellspacing="20" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="right">
+                <form name="search">
+
+                    <input type="text" class="field" placeholder="Найти" name="search" maxlength="10" />
+                    <img class="loupe" src="images/search.png" />
+                    <input type="button" id="login" onClick="hide_login()" value="Войти" />
+                    <input type="button" id="checkin" onClick="hide_checkin()" value="Регистрация" />
+                </form>
+                <div id="container_login" style="display: none;">
+                    <form id="form_login">
+                        <div class="input_log">
+                            <input type="text" name="username" placeholder="Введите логин">
+                        </div>
+                        <div class="input_login">
+                            <input type="password" name="password" placeholder="Введите пароль">
+                        </div>
+                        <input type="submit" class="enter" name="submit" value="Войти">
+                    </form>
+                </div>
+
+                <div id="container_checkin" style="display: none;">
+                    <form id="form_checkin">
+                        <div class="input_check">
+                            <input type="text" name="email" placeholder="Введите эл. почту">
+                        </div>
+                        <div class="input_checkin">
+                            <input type="password" name="password" placeholder="Введите пароль">
+                        </div>
+                        <div class="input_checkin">
+                            <input type="password" name="password" placeholder="Подтвердите пароль">
+                        </div>
+                        <input type="submit" class="enter" name="submit" value="Зарегистрироваться">
+                    </form>
+                </div>
+            </div>
+        </header>
+
+            <br /><br /><br />
+
+    <div class="list">
+        <ul class="ul">
+            <li style="list-style-image: url(images/premier.png)">
+                <a class="socialbutton" href=""> Скоро в прокате </a>
+            </li>
+            <li style="list-style-image: url(images/genre.png)">
+                <a class="socialbutton" onClick="dow()"> Жанры </a>
+                <ul id="dropdown1" style="display: none; list-style: none">
+                    <li>Приключения</li>
+                    <li>Семейный</li>
+                    <li>Драма</li>
+                    <li>Ужасы</li>
+                </ul>
+            </li>
+            <li style="list-style-image: url(images/cinema.png)">
+                <a class="socialbutton" onClick="down()"> Кинотеатры </a>
+                <ul id="dropdown" style="display: none; list-style: none;">
+                    <li>Аврора</li>
+                    <li>Беларусь</li>
+                    <li>Мир</li>
+                    <li>Ракета</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+        <!--<div id="advertising">
+            <div id="posters">
+                <div id="poster_one">
+                    <img src="images/khot_dog.jpg" />
+                    <span>Хот-дог</span>
+                </div>
+                <div id="poster_two">
+                    <img src="images/32.jpeg" />
+                    <span>Суперсемейка 2</span>
+                </div>
+                <div id="poster_three">
+                    <img src="images/iv512.jpg" />
+                    <span>Человек-Муравей и Оса</span>
+                </div>
+            </div>
+
+
+            <span id="today">
+                Киноафиша сегодня:
+                <a href="#">Минск</a>
+            </span>
+
+            <br /><br />
+
+            <div id="now">
+                <div id="films">
+                    <div id="film_one">
+                        <img src="images/810.jpg" />
+                        <span class="name_film"><strong>Человек-Муравей и Оса</strong></span>
+                        <span class="genre_film">Фантастика, Приключения, Боевик,</span>
+                        <span class="date_film">до 22 июля</span>
+                    </div>
+                    <div id="film_two">
+                        <img src="images/supersemeyka.jpg" />
+                        <span class="name_film"><strong>Суперсемейка 2</strong></span>
+                        <span class="genre_film">Анимация,</span>
+                        <span class="date_film">до 15 июля</span>
+                    </div>
+                    <div id="film_three">
+                        <img src="images/8-podrug.jpg" />
+                        <span class="name_film"><strong>8 подруг Оушена</strong></span>
+                        <span class="genre_film">Триллер, Криминальный, Боевик,</span>
+                        <span class="date_film">до 11 июля</span>
+                    </div>
+                    <div id="film_four">
+                        <img src="images/ty-vodish.jpg" />
+                        <span class="name_film"><strong>Ты водишь!</strong></span>
+                        <span class="genre_film">Комедия</span>
+                        <span class="date_film">до 18 июля</span>
+                    </div>
+                    <div id="film_five">
+                        <img src="images/vo-vlasti.jpg" />
+                        <span class="name_film"><strong>Во власти стихии</strong></span>
+                        <span class="genre_film">Триллер, Приключения, Мелодрама, Драма, Боевик,</span>
+                        <span class="date_film">до 18 июля</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>-->
+        <!--<p>bftbfjbfkjnbgnkjbngkbjngf</p>-->
+    <br /><br /><br />
+
+
+        <footer align="center">
+            &copy; 2018 "Screena"
+        </footer>
+    </div>
+</body>
+</html>

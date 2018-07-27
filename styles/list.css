@@ -1,0 +1,16 @@
+.list {
+	width: 200px;
+	height: 100%;
+	padding-left: 50px;
+	position: fixed;
+}
+
+.ul {
+	vertical-align: middle;
+}
+
+#ul_genre, #ul_cinema {
+    color: #9b9b9b;
+    font-size: 13px;
+    margin-left: 10px;
+}

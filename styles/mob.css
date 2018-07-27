@@ -1,0 +1,232 @@
+@media only screen  and (min-width : 320px) and (max-width : 768px) {
+    body{
+        width: 100%;
+        color: #696969;
+    }
+
+    .navigation {
+        list-style: none;
+        background: #1aa195;
+        width: 100%;
+        height: 97%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        color: #fff;
+        overflow-y: scroll;
+
+    }
+
+    li{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .socialbutton{
+        margin-left: 0px;
+    }
+
+    #ul_genre, #ul_cinema{
+        margin-left: -25px;
+        font-size: 14px;
+    }
+
+    .navigation a{
+        color: white;
+    }
+
+    a:hover{
+        color: #0f6059;
+    }
+
+    .site-wrap {
+        min-width: 100%;
+        min-height: 100%;
+        background-color: #fff;
+        position: relative;
+        top: 0;
+        bottom: 100%;
+        left: 0;
+        z-index: 1;
+        padding: 4em;
+    }
+
+    .nav-trigger {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    label[for="nav-trigger"] {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+
+    }
+
+    .nav-trigger:checked + label {
+        left: 215px;
+    }
+
+    .nav-trigger:checked ~ .site-wrap {
+        left: 200px;
+        box-shadow: 0 0 5px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav-trigger + label, .site-wrap {
+        transition: left 0.2s;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .left-menu, header{
+        display: none;
+    }
+
+    .search_area{
+      margin: 20px 0px 10px 0px;
+    }
+
+    input{
+      border: 1px solid #c4c4c4;
+      border-radius: 5px;
+      outline: none;
+      color: #696969;
+    }
+
+    input:focus{
+      border: 1px solid #0f6059;
+    }
+
+    #search_box{
+      width: 150px;
+      padding: 10px 30px 9px 10px;
+    }
+
+    input::placeholder{
+      color: #d0d0d0;
+    }
+
+    #login{
+      width: 150px;
+      margin: 10px 10px 30px 0px;
+      padding: 10px 10px 9px 10px;
+      color: white;
+      background: #0f6059;
+      border: 1px solid #0f6059;
+    }
+
+    #login:hover{
+      color: #1aa195;
+      background: white;
+      border: 1px solid #1aa195;
+      color: white;
+      background: #0f6059;
+      border: 1px solid #0f6059;
+    }
+
+    #checkin{
+      width: 150px;
+      margin: 10px 0px 0px 0px;
+      padding: 10px 10px 9px 10px;
+      color: white;
+      background: #0f6059;
+      border: 1px solid #0f6059;
+    }
+
+    #checkin:hover{
+      color: white;
+      background: #0f6059;
+      border: 1px solid #0f6059;
+    }
+
+    .logout{
+        float: right;
+        margin: 20px 10px 20px 0px;
+    }
+
+    #logout{
+      float: right;
+      background: white;
+      border: 1px solid #1aa195;
+      padding: 10px 10px 9px 10px;
+      color: #1aa195;
+    }
+
+    #logout:hover{
+      color: white;
+      background: #0f6059;
+      border: 1px solid #0f6059;
+    }
+
+    h1{
+        margin-top: 80px;
+    }
+
+    .movie-container {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .movie-item {
+      width: 100%;
+      margin-top: 10px;
+      color: white;
+      text-align: left;
+      margin: 0 -10%;
+      text-align: center;
+      margin-bottom: 30px
+    }
+
+    .movie_poster{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .name_film {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+
+    .genre_film {
+        font-size: 16px;
+        color: #a3a3a3;
+        margin-top: 10px;
+    }
+
+    .date_film {
+        font-size: 16px;
+        color: #a3a3a3;
+    }
+
+    .mob img{
+        width: 40%;
+
+    }
+
+    .mob{
+        margin-top: -75px;
+        border-bottom: 1px solid #e8e8e8;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        background: white;
+    }
+
+    footer{
+        width: 100%;
+        margin-left: -9.4%;
+        margin-top: 14.5%;
+    }
+}
