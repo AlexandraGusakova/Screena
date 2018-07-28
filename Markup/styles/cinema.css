@@ -1,0 +1,774 @@
+﻿@charset "windows-1251";
+
+* {
+    margin: 0;
+    outline: none;
+}
+
+@font-face {
+    font-family: "MullerLight";
+    src: url(E://практика/Screena/fonts/MullerLight.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MullerMedium";
+    src: url(E://практика/Screena/fonts/MullerMedium.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "MullerRegular";
+    src: url(E://практика/Screena/fonts/MullerRegular.otf) format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    color: #D3D3D3;
+    background: #fafafa;
+    font-size: 1em;
+    font-family: "MullerLight";
+    line-height: 135%;
+}
+
+.page {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header, footer {
+    width: 96%;
+    float: left;
+}
+
+header {
+    padding: 2%;
+    background-color: #fff;
+    /*border-bottom: 1px solid silver;*/
+}
+
+img.logo {
+    width: 120px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+/*Города*/
+
+#city {
+    font-family: "MullerLight";
+    color: #8e8e8e;
+    margin-bottom: -41.9px;
+    text-decoration: none;
+    margin-bottom: -220px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+    #city:hover {
+        color: #19a195;
+    }
+
+    #city:active {
+        color: #19a195;
+    }
+
+#cities_body {
+    width: 430px;
+    height: 450px;
+    background-color: #fff;
+    vertical-align: middle;
+    /*margin-top: 50px;
+	margin-left: 250px;*/
+    top: 20%;
+    right: 0;
+    left: 0;
+    font-size: 14px;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    color: black;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+}
+
+.list_region {
+    float: right;
+    list-style-type: none;
+}
+
+#li_city {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+#shadow {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* поверх всех  кроме окна*/
+    background: #000;
+    opacity: 0.5; /*прозрачность*/
+    left: 0;
+    top: 0;
+}
+
+/*Календарь*/
+
+.date {
+    margin-top: -41px;
+}
+
+img.calendar {
+    margin-bottom: -21px;
+    width: 10px;
+    height: 11px;
+    margin-left: 57px;
+    padding-left: 2px;
+}
+
+.data {
+    font-family: "MullerLight";
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-left: 70px;
+}
+
+input[type="date"] {
+    -webkit-appearance: none;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 1px;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+input[type="date"], focus {
+    color: #8e8e8e;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    font-family: "MullerLight";
+    font-size: 10px;
+}
+
+/*Кнопки входа и регистрации*/
+
+#container_login {
+    width: 250px;
+    height: 260px;
+    background-color: #fff;
+    /*margin: 70px 340px 0 100px;
+ text-align: center;*/
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    border-radius: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 250px;
+    height: 25px;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    /*padding-left: 0px;*/
+    border-bottom: 1px solid #c4c4c4;
+    border-right: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    border-left: 1px solid #c4c4c4;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+input[type="text"] {
+    margin-top: 25px;
+}
+
+input[type="password"] {
+    margin-top: 1px;
+}
+
+.enter {
+    background: #19a195;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 30px;
+    color: #fff;
+    font-family: "MullerRegular";
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    transition: .2s;
+    float: right;
+}
+
+a {
+    font-size: 14px;
+    color: #19a195;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+#container_checkin {
+    width: 250px;
+    height: 260px;
+    background-color: #fff;
+    top: 20%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    z-index: 2;
+    display: none;
+    position: fixed;
+    padding: 15px;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    border-radius: 10px;
+}
+
+.right {
+    float: right;
+    margin-top: -100px;
+    position: relative;
+}
+
+input[type=text].field {
+    border: 1px solid silver;
+    padding: 5px;
+    margin-left: 20px;
+    font-family: "MullerLight";
+    min-width: 50px;
+    border-radius: 5px;
+    height: 19px;
+    width: 250px;
+    font-size: 13px;
+    max-width: 250px;
+}
+
+img.loupe {
+    position: absolute;
+    float: right;
+    top: 30px;
+    background-size: auto 80%;
+    height: 21px;
+    right: 185px;
+}
+
+#login {
+    background: #fff;
+    display: inline-block;
+    color: #19a195;
+    font-family: "MullerRegular";
+    cursor: pointer;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    transition: .2s;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+    #login:hover {
+        color: #fff;
+        background: #19a195;
+    }
+
+    #login:active {
+        color: #fff;
+        background: #19a195;
+    }
+
+#checkin {
+    background: #19a195;
+    display: inline-block;
+    color: #fff;
+    font-family: "MullerRegular";
+    cursor: pointer;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    transition: .2s;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+    #checkin:hover {
+        color: #19a195;
+        background: #fff;
+    }
+
+    #checkin:active {
+        color: #19a195;
+        background: #fff;
+    }
+
+
+
+.soon:hover {
+    color: #19a195;
+    background: #fff;
+}
+
+.soon:active {
+    color: #19a195;
+    background: #fff;
+}
+
+/*стиль кнопки*/
+.socialbutton {
+    background-color: #fff;
+    display: inline-block;
+    color: #696969;
+    font-size: 16px;
+    /*padding:2px 10px;*/
+    text-decoration: none;
+    /*margin-top: 10px;*/
+    cursor: pointer;
+}
+
+    .socialbutton:hover {
+        color: #19a195;
+        background-color: #fff;
+    }
+
+    .socialbutton:active {
+        color: #19a195;
+        position: relative;
+        /*	top:1px;*/
+    }
+
+/*Меню*/
+
+.list {
+    width: 200px;
+    height: 100%;
+    padding-left: 0;
+    /*position: fixed;*/
+}
+
+.ul {
+    vertical-align: middle;
+}
+
+#ul_genre, #ul_cinema {
+    color: #9b9b9b;
+    font-size: 13px;
+    margin-left: -25px;
+}
+
+
+
+/*Информация о кинотеатре*/
+
+#cinema_page {
+    float: left;
+    width: 100%;
+    margin-top: -120px;
+}
+
+#cinema_page #about_cinema {
+    float: left;
+    width: 80%;
+    margin-left: 25%;
+    /*position: relative;*/
+}
+
+    #cinema_page #about_cinema #cinema_information {
+        display: inline-block;
+        position: relative;
+        float: left;
+        width: 95%;
+        box-sizing: border-box;
+        background-color: #fff;
+        margin-right: 2%;
+        height: 1050px;
+    }
+
+#cinema_page #about_cinema #cinema_information img {
+    width: 35%;
+    height: 38%;
+}
+
+#cinema_page #about_cinema #cinema_information #cinema_name {
+display: inline-block;
+position: absolute;
+top: 5px;
+left: 280px;
+color: black;
+font-family: "MullerRegular";
+font-size: 26px;
+}
+
+#cinema_page #about_cinema #cinema_information #cinema_city {
+display: inline-block;
+position: absolute;
+top: 38px;
+left: 280px;
+color: #acacac;
+font-family: "MullerLight";
+font-size: 19px;
+}
+
+#text_adress, #text_phone, #text_rooms, #text_description, #text_photo {
+    display: inline-block;
+    position: absolute;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#text_adress {
+    top: 70px;
+}
+
+#text_phone {
+    top: 95px;
+}
+
+#text_rooms {
+    top: 120px;
+}
+
+#text_description {
+    top: 145px;
+}
+
+#text_photo {
+    top: 190px;
+}
+
+
+/*#text_description {
+    display: inline-block;
+    position: absolute;
+    top: 350px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}*/
+
+#text_photo{
+    display: inline-block;
+    position: absolute;
+    top: 380px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#text_reviews {
+    display: inline-block;
+    position: absolute;
+    top: 650px;
+    left: 280px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 16px;
+}
+
+#textarea_review {
+    display: inline-block;
+    position: absolute;
+    top: 680px;
+    left: 280px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-family: MullerLight;
+    color: #cdcdcd;
+    font-size: 12px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+
+#button_review {
+    background: #fff;
+    position: absolute;
+    top: 790px;
+    left: 646px;
+    display: inline-block;
+    color: #00ac9a;
+    font-family: "MullerRegular";
+    cursor: pointer;
+    border-bottom: 1px solid #19a195;
+    border-right: 1px solid #19a195;
+    border-top: 1px solid #19a195;
+    border-left: 1px solid #19a195;
+    transition: .2s;
+    padding: 0 10px;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+    #button_review :hover {
+        color: #fff;
+        background: #19a195;
+    }
+
+    #button_review :active {
+        color: #fff;
+        background: #19a195;
+    }
+
+#username {
+    display: inline-block;
+    position: absolute;
+    top: 830px;
+    left: 310px;
+    color: #68666a;
+    font-family: "MullerRegular";
+    font-size: 13px;
+}
+
+#datetime_review {
+    display: inline-block;
+    position: absolute;
+    top: 830px;
+    left: 350px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 13px;
+}
+
+#review {
+    display: inline-block;
+    position: absolute;
+    top: 860px;
+    left: 310px;
+    color: #acacac;
+    font-family: "MullerLight";
+    font-size: 14px;
+}
+
+#date_seance {
+    display: inline-block;
+    position: absolute;
+    top: 415px;
+    left: 70px;
+    color: #68666a;
+    font-family: "MullerLight";
+}
+
+#name_cinema1 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance1 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: 130px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#time_seance2 {
+    display: inline-block;
+    position: absolute;
+    top: 440px;
+    left: 180px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#name_cinema2 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance3 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: 130px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance4 {
+    display: inline-block;
+    position: absolute;
+    top: 470px;
+    left: 180px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+#name_cinema3 {
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: -1px;
+    font-size: 15px;
+    color: #cdcdcd;
+    font-family: "MullerLight";
+}
+
+#time_seance5 {
+    display: inline-block;
+    position: absolute;
+    top: 500px;
+    left: 130px;
+    font-size: 15px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+
+
+/*Рейтинг*/
+
+.rating_stars {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    top: 790px;
+    left: 285px;
+    font-size: 13px;
+    color: #00999a;
+    font-family: "MullerLight";
+}
+
+    .rating_stars:not(:checked) > input {
+        position: absolute;
+        top: -9999px;
+    }
+
+    .rating_stars:not(:checked) > label {
+        float: right;
+        width: 1em;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 200%;
+        line-height: 1.2;
+        color: #fff; /*закраш звезды без наведения*/
+        text-shadow: 1px 1px #00999a, 2px 2px #00999a, .1em .1em .2em #00999a;
+    }
+
+        .rating_stars:not(:checked) > label:before {
+            content: '★';
+        }
+
+    .rating_stars > input:checked ~ label {
+        color: #00999a;
+    }
+
+    .rating_stars:not(:checked) > label:hover,
+    .rating_stars:not(:checked) > label:hover ~ label {
+        color: #00999a;
+    }
+
+    .rating_stars > input:checked + label:hover,
+    .rating_stars > input:checked + label:hover ~ label,
+    .rating_stars > input:checked ~ label:hover,
+    .rating_stars > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: #00999a;
+    }
+
+    .rating_stars > label:active {
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+
+/*Слайдер*/
+ol, ul {
+    list-style: none;
+}
+
+#cinema_photo {
+    width: 940px;
+    margin: 20px auto;
+}
+
+#thumbs{
+    padding-left: 670px;
+    margin-top: -440px;
+    height: 200px;
+    width: 200px;
+}
+
+#thumbs li {
+    float: left;
+    margin: 0 2px;
+    opacity: .6;
+}
+
+#photos {
+    margin-top: -100px;
+    height: 1300px;
+    width: 1100px;
+    padding-left: 280px;
+}
+
+footer {
+    /*margin-bottom: -20px;*/
+    padding: 2%;
+    color: #fff;
+    font-family: "MullerLight";
+    font-size: 13px;
+    background-color: #c4c4c4;
+    border-bottom: 2px solid silver;
+    margin-top: 10px;
+}

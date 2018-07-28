@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <meta name="keywords" content="кино, киноафиша, фильм" />
+    <meta name="description" content="Афиша кинотеатров Беларуси. Расписание сеансов в кинотеатрах, трейлеры, последние новинки кино." />
+    <link href="styles/cinema.css" rel="stylesheet" type="text/css" />
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="js/hide.js"></script>
+    <script src="js/for_slider.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript" src="js/for_slider"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript"src="js/sliders.js"></script>
+    <title>Screena</title>
+</head>
+<body>
+
+    <div class="page">
+
+        <header>
+            <div class="top-left">
+                <img class="logo" src="images/logo.png" />
+
+                <div class="cities">
+                    <a href="#" id="city" onClick="hide_cities()"> Минск </a>
+
+
+                </div>
+
+
+                <div class="date">
+                    <img class="calendar" src="images/calendar.png" />
+                    <div class="data">
+                        <input type="date" id="dataToday" value="Сегодня, " />
+                        <script>
+                            document.getElementById('dataToday').valueAsDate = new Date();
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="cities_body" style=" display: none; list-style: none;">
+                <div class="cities_content">
+                    <table cellspacing="20" cellpadding="0" border="0">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                        <li id="li_city">Минск</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                        <li id="li_city">Брест</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                        <li id="li_city">Витебск</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                        <li id="li_city">Гомель</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                        <li id="li_city">Могилев</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul id="list_region">
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                        <li id="li_city">Гродно</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="right">
+                <form name="search">
+
+                    <input type="text" class="field" placeholder="Найти" name="search" maxlength="10" />
+                    <img class="loupe" src="images/search.png" />
+                    <input type="button" id="login" onClick="hide_login()" value="Войти" />
+                    <input type="button" id="checkin" onClick="hide_checkin()" value="Регистрация" />
+                </form>
+                <div id="container_login" style="display: none;">
+                    <form id="form_login">
+                        <div class="input_log">
+                            <input type="text" name="username" placeholder="Введите логин">
+                        </div>
+                        <div class="input_login">
+                            <input type="password" name="password" placeholder="Введите пароль">
+                        </div>
+                        <input type="submit" class="enter" name="submit" value="Войти">
+                    </form>
+                </div>
+
+                <div id="container_checkin" style="display: none;">
+                    <form id="form_checkin">
+                        <div class="input_check">
+                            <input type="text" name="email" placeholder="Введите эл. почту">
+                        </div>
+                        <div class="input_checkin">
+                            <input type="password" name="password" placeholder="Введите пароль">
+                        </div>
+                        <div class="input_checkin">
+                            <input type="password" name="password" placeholder="Подтвердите пароль">
+                        </div>
+                        <input type="submit" class="enter" name="submit" value="Зарегистрироваться">
+                    </form>
+                </div>
+            </div>
+
+
+            <!--<div class="content">-->
+            <br /><br /><br />
+            <div class="list">
+                <ul class="ul">
+                    <li style="list-style-image: url(images/premier.png)">
+                        <a class="socialbutton" href=""> Скоро в прокате </a>
+                    </li>
+                    <li style="list-style-image: url(images/genre.png)">
+                        <a class="socialbutton" onClick="down_genre()"> Жанры </a>
+                        <ul id="ul_genre" style="display: none; list-style: none">
+                            <li>Приключения</li>
+                            <li>Семейный</li>
+                            <li>Драма</li>
+                            <li>Ужасы</li>
+                        </ul>
+                    </li>
+                    <li style="list-style-image: url(images/cinema.png)">
+                        <a class="socialbutton" onClick="down_cinema()"> Кинотеатры </a>
+                        <ul id="ul_cinema" style="display: none; list-style: none;">
+                            <li>Аврора</li>
+                            <li>Беларусь</li>
+                            <li>Мир</li>
+                            <li>Ракета</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div id="cinema_page">
+                <div id="about_cinema">
+                    <div id="cinema_information">
+                        <img src="images/supersemeyka.jpg" />
+                        <span id="cinema_name"><strong>Кинотеатр Беларусь</strong></span>
+                        <span id="cinema_city">Минск</span>
+                        <span id="text_adress">Адрес: <span id="cinema_adress" style="font-family:MullerLight; color: #acacac;">ул.Романовская Слобода, 28</span></span>
+                        <span id="text_phone">Телефон: <span id="cinema_phone" style="font-family:MullerLight; color: #acacac;">8(017)2094182</span></span>
+                        <span id="text_rooms">Количество залов: <span id="cinema_rooms" style="font-family:MullerLight; color: #acacac;">5</span></span>
+                        <span id="text_description">Описание: <span id="cinema_description" style="font-family:MullerLight; color: #acacac;">Кинотеатр "Беларусь" был открыт в 1961 году. На его месте в 2008 году было возведено совершенно новое здание - первый в республике мультиплекс. В нем пять комфортабельных залов, оснащенных новейшим оборудованием. В холле кинотеатра "Беларусь" работает кафе-бар, позволяющий перекусить перед сеансом и купить прохладительные напитки с собой. Залы оборудованы звуковой системой Dolby. С 2012 года в 3-х залах мультиплекса было установлено необходимое для трансляции 3D кино оборудование.</span></span>
+                        <span id="text_photo">Фотографии: </span>
+                        <br /><br /><br /><br /><br />
+                            <div id="cinema_photo">
+                                <div id="slider">
+                                    <ul id="photos">
+                                        <li id="photo-1"><a href="#p1"><img src="images/1.120x60.jpg" /></a></li>
+                                        <li id="photo-2"><a href="#p2"><img src="images/2.120x60.jpg" /></a></li>
+                                        <li id="photo-3"><a href="#p3"><img src="images/3.120x60.jpg" /></a></li>
+                                    </ul>
+                                    <ul id="thumbs">
+                                        <li id="thumb-1"><a href="#t1"><img src="images/1.2.jpg" /></a></li>
+                                        <li id="thumb-2"><a href="#t2"><img src="images/2.2.jpg" /></a></li>
+                                        <li id="thumb-3"><a href="#t3"><img src="images/3.2.jpg" /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <span id="text_reviews">Отзывы: </span>
+                        <textarea id="textarea_review" placeholder="Оставьте ваш отзыв" cols="70" rows="6"></textarea>
+                        <div class="rating_stars">
+                            <input type="radio" id="star10" name="rating" /><label for="star10"></label>
+                            <input type="radio" id="star9" name="rating" /><label for="star9"></label>
+                            <input type="radio" id="star8" name="rating" /><label for="star8"></label>
+                            <input type="radio" id="star7" name="rating" /><label for="star7"></label>
+                            <input type="radio" id="star6" name="rating" /><label for="star6"></label>
+                            <input type="radio" id="star5" name="rating" /><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" /><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" /><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" /><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" /><label for="star1"></label>
+                        </div>
+                        <input type="button" id="button_review" value="Оставить" />
+                        <span id="username">dzhuk</span>
+                        <span id="datetime_review">7.07.2018 13:22</span>
+                        <!--<img id="img_user" src="#"/>
+                        <span id="stars_review">7<img src="#"></span>-->
+                        <span id="review">Нам понравился очень. Долгий, конечно, но захватывающий.</span>
+                        <span id="date_seance">11 июля. сегодня</span>
+                        <span id="name_cinema1">Небоскреб</span>
+                        <span id="time_seance1">14:30</span>
+                        <span id="time_seance2">16:30</span>
+                        <span id="name_cinema2">Суперсемейка 2</span>
+                        <span id="time_seance3">10:00</span>
+                        <span id="time_seance4">18:30</span>
+                        <span id="name_cinema3">Ты водишь!</span>
+                        <span id="time_seance5">13:30</span>
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+
+        <footer align="center">
+            &copy; 2018 "Screena"
+        </footer>
+
+    </div>
+</body>
+</html>
